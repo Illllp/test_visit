@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя визитница</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden; /* Скрыть лишнее содержимое */
+        }
+        .card img{
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .card p {
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+        }
+        .contact-info a:hover {
+          text-decoration: underline;
+        }
+        .contact-info a i {
+          margin-right: 5px;
+          font-size: 1.2em;
+          /* Укажите иконку social media - или оставьте, это просто пример */
+        }
+        
+        @media (max-width: 600px) {
+          .contact-info {
+            flex-direction: column;
+          }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Моя визитница</h1>
+
+    <div class="card">
+        <img src="Аватар 1.jpg" alt="Аватар">
+        <h2>Иван Иванов</h2>
+        <p>Frontend разработчик</p>
+        <div class="contact-info">
+            <a href="tel:+71234567890"><i class="fas fa-phone"></i> +7-123-456-78-90</a>
+            <a href="mailto:ivan.ivanov@example.com"><i class="fas fa-envelope"></i> ivan.ivanov@example.com</a>
+            <a href="https://www.example.com" target="_blank"><i class="fas fa-link"></i> Мой сайт</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Аватар 2.jpg" alt="Аватар">
+        <h2>Мария Иванова</h2>
+        <p>UI дизайнер</p>
+        <div class="contact-info">
+            <a href="tel:+79876543210"><i class="fas fa-phone"></i> +7-987-654-32-10</a>
+            <a href="mailto:maria.ivanova@example.com"><i class="fas fa-envelope"></i> maria.ivanova@example.com</a>
+            <a href="https://www.behance.net" target="_blank"><i class="fas fa-link"></i> Портфолио</a>
+        </div>
+    </div>
+
+    <!-- Добавьте здесь другие карточки -->
+
+
+    <!-- Подключение иконок fontawesome (обязательно подгрузите) -->
+    <script src="https://kit.fontawesome.com/your_fontawesome_kit.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
